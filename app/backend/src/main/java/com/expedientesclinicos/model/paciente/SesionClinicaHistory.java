@@ -23,7 +23,7 @@ public class SesionClinicaHistory {
     @Column(name = "paciente_id", nullable = false)
     private Long pacienteId;
 
-    @Column(nullable = false, columnDefinition = "CLOB")
+    @Column(nullable = false, columnDefinition = "TEXT")
     private String snapshot;
 
     @Column(name = "fecha_modificacion")
