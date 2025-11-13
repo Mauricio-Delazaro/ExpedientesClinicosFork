@@ -53,3 +53,6 @@ CREATE TABLE sesiones_clinicas (
 CREATE INDEX idx_pacientes_terapeuta ON pacientes (terapeuta_id);
 CREATE INDEX idx_sesiones_paciente ON sesiones_clinicas (paciente_id);
 CREATE INDEX idx_sesiones_terapeuta ON sesiones_clinicas (terapeuta_id);
+
+INSERT INTO terapeutas (nombre, correo, password, rol, especialidad, cedula_profesional, telefono) VALUES
+('Dra. Ana Martínez', '@correo1.com', 'password1', 'TERAPEUTA', 'Psicología Clínica', 'CED123456', '555-1234'),
